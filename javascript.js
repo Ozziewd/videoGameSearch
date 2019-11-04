@@ -75,6 +75,7 @@ function buildInfo(response){
     $mContent=$('<div>').addClass('media-content')
     $content=$('<div>').addClass('content')
     $pTag=$('<p>').html('<strong>'+response.name+'</strong>')
+    whereModalGoes = $("<div>").addClass('modalIsHere').text("modal") //careful
     if(response.esrb_rating === null){
         $rating=$('<div>').text('Rating: Not Rated')
     }
@@ -95,9 +96,10 @@ function buildInfo(response){
     $mContent.append($content)
 
     $figure.append($img)
-    $mediaLeft.append($figure)
+    $mediaLeft.append($figure, whereModalGoes)
     $article.append($mediaLeft, $mContent)
     $box.append($article)
+    
     $('#results').prepend($box)
     console.log(response);
 }
