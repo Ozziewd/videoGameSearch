@@ -60,18 +60,30 @@ function buildInfo(response) {
 
     $(".openModal").on("click", function () {
         $(".modal").addClass("is-active")
-        //youtube api call here
 
-        var youtubeGameSearch = $("#searchBar").val().trim();
-        //create an ajax call that searches for the youtubeGameSearch in the query url
-        .ajax(settings).done(function (response) {
-            console.log(response)
-            buildInfo(response)
-        })
 
-      
+        var queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + $("#searchBar").val().trim() + "&key=AIzaSyD5zrZlNG4XNCYghghOKhT8tP6ZNkkp6Eg"
+
+
+        function getYTVidId(theUrl) {
+
+            var YTdata = new XMLHttpRequest();
+
+            YTdata.open("GET", theUrl, false); 
+            YTdata.send(null);
+
+            return YTdata.responseText;
+        }
+
+
+        var YTResults = JSON.parse(getYTVidId(queryURL))
+
+        var embedSRC = "https://www.youtube.com/embed/" + YTResults.items[0].id.videoId;
+
+        $(".embeddedYT").attr("src", embedSRC)
+
     })
-    
+
     $(".modal-close").on("click", function () {
         $(".modal").removeClass("is-active")
     })
