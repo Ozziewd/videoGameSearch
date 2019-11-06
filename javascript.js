@@ -64,7 +64,7 @@ function buildInfo(response) {
 
         var youtubeGameSearch = $("#searchBar").val().trim();
         //create an ajax call that searches for the youtubeGameSearch in the query url
-        .ajax(settings).done(function (response) {
+        $.ajax(settings).done(function (response) {
             console.log(response)
             buildInfo(response)
         })
