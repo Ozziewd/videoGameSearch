@@ -1,2 +1,4 @@
-# gamingLibrary
-just a simple search library for games
+# Video Gaming Library
+As a Video Gamers,
+I want to be to find all the information of a game I am interested in.
+So that I can decide if it is worth playing.
