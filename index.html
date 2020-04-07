@@ -15,42 +15,44 @@
 </head>
 
 <body>
-  <div class="column" style="background-color: #cd0000;">
-  </div>
-
+  <div class="wrapper">
+    <div class="column" style="background-color: #cd0000;">
+    </div>
+    
     <div class="column" style="background-color: #FF6103; text-align: center;">
       <h1 id="heading">
         Gaming Library
       </h1> 
     </div>
-      
-      <div class="column" style="background-color: #FFE600;">
-        <div class="field is-grouped">
-          <p class="control">
-            <input type="search" id="searchBar" placeholder="Game Title"  style=" text-align: center;">
-          </p>
-          <button class="button is-success" id="search">Search</button>
+    
+    <div class="column" style="background-color: #FFE600;">
+      <div class="field is-grouped">
+        <p class="control">
+          <input type="search" id="searchBar" placeholder="Game Title"  style=" text-align: center;">
+        </p>
+        <button class="button is-success" id="search">Search</button>
+      </div>
+    </div>
+    
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <iframe width="560" height="315" src="" class="embeddedYT" frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    
+    <div class="columns">
+      <div class="column">
+        <div id="results">
+          
         </div>
       </div>
-
-  <div class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-content">
-      <iframe width="560" height="315" src="" class="embeddedYT" frameborder="0" 
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
-    </div>
-    <button class="modal-close is-large" aria-label="close"></button>
-  </div>
-
-  <div class="columns">
-    <div class="column">
-      <div id="results">
-
-      </div>
     </div>
   </div>
-  <script src="./javascript.js"></script>
-
-</body>
-</html>
+    <script src="./javascript.js"></script>
+    
+  </body>
+  </html>
