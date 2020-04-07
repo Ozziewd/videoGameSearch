@@ -1,4 +1,5 @@
-$('#search').click(() => {
+$('#search').click(function (event) {
+    event.preventDefault();
     console.log('here')
     gameSearch()
 })
@@ -84,7 +85,8 @@ function buildInfo(response) {
 
     })
 
-    $(".modal-close").on("click", function () {
+    $(".modal-close").on("click", closeModel)
+    function closeModel () {
         $(".modal").removeClass("is-active")
-    })
+    }
 }
