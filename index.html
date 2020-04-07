@@ -9,33 +9,29 @@
   <title>Gaming Library</title>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" href="Assests/images/game.png">
+  <link rel="icon" type="image/png" href="assets/images/game.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
+  <div class="column" style="background-color: #cd0000;">
+  </div>
 
-      <div class="columns">
-        <div class="column" style="background-color: #cd0000;">
+    <div class="column" style="background-color: #FF6103; text-align: center;">
+      <h1 id="heading">
+        Gaming Library
+      </h1> 
+    </div>
+      
+      <div class="column" style="background-color: #FFE600;">
+        <div class="field is-grouped">
+          <p class="control">
+            <input type="search" id="searchBar" placeholder="Game Title"  style=" text-align: center;">
+          </p>
+          <button class="button is-success" id="search">Search</button>
         </div>
       </div>
-
-      <div class="columns">
-        <div class="column" style="background-color: #FF6103; text-align: center;">
-         <h1 id="heading">
-            Gaming Library
-         </h1> 
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column" style="background-color: #FFE600; text-align: center;">
-            <input type="search" id="searchBar" placeholder="Game Title">
-            <button class="button is-success" id="search">Search</button>
-        </div>
-      </div>
-
 
   <div class="modal">
     <div class="modal-background"></div>
