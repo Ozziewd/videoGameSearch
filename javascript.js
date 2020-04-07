@@ -2,6 +2,7 @@ $('#search').click(function (event) {
     event.preventDefault();
     console.log('here')
     gameSearch()
+    $("#searchBar").val("")
 })
 function gameSearch() {
     console.log('clicked')
