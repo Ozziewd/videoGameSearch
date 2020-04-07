@@ -1,9 +1,9 @@
-.box {
-    background-color: #701D1D;
+.box{
+    background-color: #701d1d;
 }
 
 
-.gameTitle {
+.gameTitle{
     color: rgb(230, 175, 75);
 }
 
@@ -17,10 +17,9 @@
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.field {
+.field{
     padding-left: 40%;
 }
-
-body {
-    background-color: #523737;
-}
+ html {
+     background-color: rgb(41, 43, 44);
+ }
