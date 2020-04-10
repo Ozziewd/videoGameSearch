@@ -2,7 +2,6 @@
     background-color: #701d1d;
 }
 
-
 .gameTitle{
     color: rgb(230, 175, 75);
 }
@@ -17,9 +16,11 @@
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.field{
-    padding-left: 40%;
-}
+
  html {
      background-color: rgb(41, 43, 44);
+ }
+
+ input {
+     text-align: center;
  }
