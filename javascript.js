@@ -5,15 +5,16 @@ function gameTitleValue(event) {
     console.log('here')
     gameSearch()
     $("#searchBar").val("")
-    
+
 }
 function gameSearch() {
     console.log('clicked')
     var searchQuery = $("#searchBar").val().trim()
+    var newSearchQuery = searchQuery.split(" ").join("-")
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://rawg-video-games-database.p.rapidapi.com/games/" + searchQuery,
+        "url": "https://rawg-video-games-database.p.rapidapi.com/games/" + newSearchQuery,
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
