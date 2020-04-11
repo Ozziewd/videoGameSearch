@@ -1,9 +1,12 @@
-$('#search').click(function (event) {
+$('#search').click(gameTitleValue);
+
+function gameTitleValue(event) {
     event.preventDefault();
     console.log('here')
     gameSearch()
     $("#searchBar").val("")
-})
+    
+}
 function gameSearch() {
     console.log('clicked')
     var searchQuery = $("#searchBar").val().trim()
@@ -60,7 +63,9 @@ function buildInfo(response) {
     $('#results').prepend($box)
     console.log(response);
 
-    $(".openModal").on("click", function () {
+    $(".openModal").on("click", openModal)
+
+    function openModal () {
         $(".modal").addClass("is-active")
 
 
@@ -84,7 +89,7 @@ function buildInfo(response) {
 
         $(".embeddedYT").attr("src", embedSRC)
 
-    })
+    }
 
     $(".modal-close").on("click", closeModel)
     function closeModel () {
