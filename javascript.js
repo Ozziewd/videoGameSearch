@@ -64,7 +64,7 @@ function buildInfo(response) {
         $(".modal").addClass("is-active")
 
 
-        var queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + $("#searchBar").val().trim() + "trailer" + "&key=AIzaSyD5zrZlNG4XNCYghghOKhT8tP6ZNkkp6Eg"
+        var queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + response.name + "trailer" + "&key=AIzaSyD5zrZlNG4XNCYghghOKhT8tP6ZNkkp6Eg"
 
 
         function getYTVidId(theUrl) {
