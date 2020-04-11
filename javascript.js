@@ -36,7 +36,7 @@ function buildInfo(response) {
     $mContent = $('<div>').addClass('media-content')
     $content = $('<div>').addClass('content')
     $pTag = $('<p>').html('<strong class="gameTitle">' + response.name + '</strong>')
-    whereModalGoes = $("<button>").addClass("openModal").text("Videos")
+    whereModalGoes = $("<button>").addClass("openModal").text("Trailer")
     if (response.esrb_rating === null) {
         $rating = $('<div>').text('Rating: Not Rated')
     }
